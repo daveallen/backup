@@ -194,7 +194,7 @@ describe "Backup::Pipeline" do
       Timeout.timeout(5) { pipeline.run }
 
       expect(pipeline).to be_success
-      expect(pipeline.stderr.bytesize).to eq(131072)
+      expect(pipeline.stderr.bytesize).to eq(131_072)
     end
   end
 
